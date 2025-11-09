@@ -38,7 +38,7 @@ body {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* 5. Псевдоклас :hover (Основне завдання) */
+/* 5.*/
 .image-wrapper img:hover {
     /* Збільшення картинки */
     transform: scale(1.1);
@@ -47,8 +47,6 @@ body {
     /* Рамка змінює колір */
     border-color: #007bff;
 }
-
-/* !!! ВИДАЛЕНО: Псевдоелемент ::after, який додавав текст "HOVER" !!! */
 
 /* 6. Атрибутний селектор */
 [data-type="nature"] {
