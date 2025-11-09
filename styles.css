@@ -1,1 +1,66 @@
+/* Зовнішній CSS файл (styles.css) */
 
+/* 1. Селектор тега */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Селектор ID */
+#main-title {
+    color: #007bff;
+    text-align: center;
+    padding: 20px;
+    /* Застосування тіні */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 3. Селектор класу */
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    /* Відступи */
+    gap: 15px;
+}
+
+/* 4. Комбінатор нащадка */
+.image-wrapper img {
+    /* Рамка */
+    border: 5px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    /* Плавний перехід для ефекту :hover */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 5. Псевдоклас :hover (Основне завдання) */
+.image-wrapper img:hover {
+    /* Збільшення картинки */
+    transform: scale(1.1);
+    /* Тінь, що з'являється */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    /* Рамка змінює колір */
+    border-color: #007bff;
+}
+
+/* 6. Псевдоелемент ::after (для демонстрації) */
+.image-wrapper::after {
+    content: "HOVER";
+    display: block;
+    font-size: 10px;
+    color: #888;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* 7. Атрибутний селектор (для демонстрації) */
+[data-type="nature"] {
+    background-color: #e6ffe6;
+    padding: 5px;
+    border-radius: 4px;
+}
